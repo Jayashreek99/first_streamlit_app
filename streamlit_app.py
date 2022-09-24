@@ -46,3 +46,14 @@ my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
 my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
+
+
+import requests
+fruit_choice = streamlit.text_input('What fruit would you like information about?','jackfruit')
+#streamlit.write('Thanks for adding jackfruit ', fruit_choice)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+streamlit.write('Thanks for adding jackfruit ', fruit_choice)
+#streamlit.text(fruityvice_response)
+
+#fruit_choice = streamlit.text_input('What fruit would you like information about?','jackfruit')
+#streamlit.write('Thanks for adding jackfruit ', fruit_choice)
