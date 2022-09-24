@@ -45,9 +45,9 @@ try:
     
 #streamlit.write('The user entered kiwi ', fruit_choice)
 
-import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
-streamlit.text(fruityvice_response)
+#import requests
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+#streamlit.text(fruityvice_response)
 
 
 # write your own comment -what does the next line do? 
