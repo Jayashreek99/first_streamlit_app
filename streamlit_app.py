@@ -39,9 +39,9 @@ try:
      streamlit.dataframe(back_from_function)
 
     
-    streamlit.dataframe(fruityvice_normalized)
-except URLError as e:
-  streamlit.error()
+ #   streamlit.dataframe(fruityvice_normalized)
+#except URLError as e:
+#  streamlit.error()
     
 #streamlit.write('The user entered kiwi ', fruit_choice)
 
@@ -54,6 +54,8 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_c
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
+except URLError as e:
+streamlit.error()
 
 streamlit.stop()
 import snowflake.connector
