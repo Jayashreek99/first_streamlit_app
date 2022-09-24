@@ -17,15 +17,12 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 # Display the table on the page.
 streamlit.dataframe(my_fruit_list)
 
-fruits_selected=streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
+fruits_selected=streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries','Kiwifruit'])
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 # Display the table on the page.
 streamlit.dataframe(my_fruit_list)
 
-fruits_selected=streamlit.mutiselect("Pick some fruits:", list(my_fruit_list.index),['kiwi','Strawberries'])
-fruits_to_show = my_fruit_list.loc[fruits_selected]
-# Display the table on the page.
-streamlit.dataframe(my_fruit_list)
+
 #def get_fruityvice_data(this_fruit_choice):
 #  fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
 #  fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
