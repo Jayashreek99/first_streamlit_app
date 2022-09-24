@@ -40,4 +40,3 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 import snowflake.connector
-pyarrow==6.0.1
