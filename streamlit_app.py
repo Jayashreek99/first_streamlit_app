@@ -56,4 +56,4 @@ streamlit.write('Thanks for adding jackfruit ', fruit_choice)
 #streamlit.text(fruityvice_response)
 
 #fruit_choice = streamlit.text_input('What fruit would you like information about?','jackfruit')
-#streamlit.write('Thanks for adding jackfruit ', fruit_choice)
+#streamlit.write('Thanks for adding ', fruit_choice)
