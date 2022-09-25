@@ -90,7 +90,7 @@ def insert_row_snowflake():
   fruits=['jackfruit','papaya', 'guava', 'kiwi']
   with my_cnx.cursor() as my_cur:
     for fruit in fruits:
-       my_cur.execute(f"insert into fruit_load_list values({fruit})")
+       my_cur.execute(f"insert into fruit_load_list values('{fruit}')")
     return "Thanks for adding "
   
 #add_my_fruit=streamlit.text_input('What fruit would you like to add?')  
